@@ -27,6 +27,7 @@ for color in all_colors:
     # if color don't exist color equals 1
     else:
         color_counts[color] = 1
+print(color_counts)
 
 most_common_color = max(color_counts, key=color_counts.get)
 
