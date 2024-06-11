@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Polling Unit Result</title>
+</head>
+<body>
+    <h1>Add Polling Unit Result</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="polling_unit_id">Polling Unit ID:</label>
+        <input type="number" name="polling_unit_id" required><br>
+
+        <label for="pdp_score">PDP Score:</label>
+        <input type="number" name="pdp_score" required><br>
+
+        <label for="apc_score">APC Score:</label>
+        <input type="number" name="apc_score" required><br>
+
+        <!-- Add more input fields for other parties as needed -->
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
